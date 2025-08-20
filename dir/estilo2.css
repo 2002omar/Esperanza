@@ -1,0 +1,176 @@
+
+body{
+ background-color: black;
+ font-size: 100%;
+  color: white;
+}
+
+p{
+ font-size: 1rem;
+ margin-bottom: 1.25rem;
+}
+
+
+/* @media query para tablets y pantallas más grandes
+   Esto se aplica cuando el ancho de la pantalla es de 768px o más.
+*/
+@media (min-width: 768px) {
+    p {
+        /* Aumenta un poco el tamaño de la fuente para que sea más cómodo de leer
+           en pantallas más grandes sin que se vea demasiado pequeña. */
+        font-size: 1.125rem; /* Esto equivale a 18px */
+    }
+}
+
+/* @media query para escritorios y pantallas muy grandes
+   Esto se aplica cuando el ancho de la pantalla es de 1024px o más.
+*/
+@media (min-width: 1024px) {
+    p {
+        /* Puedes hacer un ajuste final para pantallas grandes si lo consideras necesario. */
+        font-size: 1.2rem; /* Esto equivale a 19.2px */
+        
+        /* Ajusta la altura de la línea si crees que mejora la legibilidad
+           en un tamaño de fuente mayor. */
+        line-height: 1.6;
+    }
+}
+
+
+/* Estilos para el elemento header */
+header {
+    background-color: blue; /* Color de fondo del encabezado */
+    padding: 10px;
+    align-content: margin: 10px;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para la imagen dentro del header */
+header img {
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0;
+    width: 100%; /* La imagen ocupa todo el ancho del encabezado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Recorta la imagen para que cubra el área sin distorsionarse */
+}
+
+legend{
+ text-align: center;
+}
+
+ 
+
+.main {
+ background: #000090;
+ width: 100%;
+  font-family: monospace;
+  display: block;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: auto;
+  border: 2px solid red;
+}
+  .main h1, h2, h3, h4{
+  color: orange;
+    text-align: center;
+  }
+
+
+   .main ul{
+    background: blue;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration-color: red;
+    text-align: left;
+   }
+
+.main p{
+ text-align: left;
+  color: #fff;
+ padding: 20px;
+}
+
+/* Estilos para el pie de página (opcional) */
+
+.footer {
+ display: block;
+    background-color: #002500;
+    color: #fff; /* Se corrigió el valor del color */
+    text-align: center;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.footer a {
+    color: #fff; /* Se corrigió el valor del color */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+/*Efecto marquee */
+.marquee{
+  font-family: monospace;
+  color: orange;  
+  width: 100%; /* El ancho del contenedor */
+  white-space: nowrap; /* Evita que el texto salte de línea */
+  overflow: hidden; /* Oculta el texto que se sale del contenedor */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+  .marquee span {
+  display: inline-block; /* Permite aplicar la animación al texto */
+  padding-left: 100%; /* Hace que el texto comience fuera del área visible */
+  animation: marquee 15s linear infinite; /* Aplica la animación */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0); /* Posición inicial: 0% de desplazamiento */
+  }
+  100% {
+    transform: translate(-100%, 0); /* Posición final: se desplaza el 100% de su propio ancho hacia la izquierda */
+  }
+
+}
+
+/* Container for the button bar */
+.button-bar {
+    list-style-type: none;
+ text-decoration: none;
+    width: fit-content;
+ width: 90%;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+/* Hover effect */
+.button a: hover {
+    background-color: magenta;
+    color: #fff;
+    border-color: #007BFF;
+}
+ <hr>
+
+
+/* Active button style */
+.button.active {
+    background-color: red;
+    color: #fff;
+    border-color: #0056b3;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
