@@ -56,6 +56,7 @@ header img {
 
 legend{
  text-align: center;
+ overflow: auto;
 }
 
  
@@ -74,11 +75,16 @@ legend{
   color: orange;
     text-align: center;
   }
+  
+.main em{
+color: pink;
+margin: auto, 4px;
+}
 
 
    .main ul{
     background: blue;
-    max-width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 10px;
     text-decoration-color: red;
@@ -98,11 +104,12 @@ legend{
     background-color: #002500;
     color: #fff; /* Se corrigió el valor del color */
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: 10;
+   overflow: auto;;
 }
 
 .footer a {
