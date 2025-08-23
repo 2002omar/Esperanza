@@ -1,6 +1,6 @@
 
 body{
- background-color: black;
+ background-color: blue;
  font-size: 100%;
   color: white;
 }
@@ -9,9 +9,8 @@ p{
  font-size: 1rem;
  margin-bottom: 1.25rem;
 }
-
-
-/* @media query para tablets y pantallas más grandes
+/*
+@media query para tablets y pantallas más grandes
    Esto se aplica cuando el ancho de la pantalla es de 768px o más.
 */
 @media (min-width: 768px) {
@@ -59,49 +58,47 @@ legend{
  overflow: auto;
 }
 
- 
-
-.main {
- background: #000090;
- width: 100%;
+main {
+  background: blue;
+  max-width: 100%;
   font-family: monospace;
-  display: block;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0 0;
+  padding: 0 10px;
   height: auto;
-  border: 2px solid red;
+  overflow: auto;
 }
-  .main h1, h2, h3, h4{
+
+main h1, h2, h3, h4 {
   color: orange;
-    text-align: center;
-  }
-  
-.main em{
-color: pink;
-margin: auto, 4px;
+  text-align: center;
 }
 
+main em {
+  color: orange;
+  margin: 0 3px; /* Se corrigió el error de sintaxis aquí */
+}
 
-   .main ul{
-    background: blue;
-    width: 95%;
-    margin: 0 auto;
-    padding: 10px;
-    text-decoration-color: red;
-    text-align: left;
-   }
+main ul {
+  background: blue;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  list-style-type: none; /* Esta línea elimina las viñetas */
+}
 
-.main p{
- text-align: left;
+main p {
+  text-align: left;
   color: #fff;
- padding: 20px;
+  padding: 20px;
 }
 
-/* Estilos para el pie de página (opcional) */
+
+  Estilos para el pie de página (opcional) */
 
 .footer {
  display: block;
-    background-color: #002500;
+    background-color: #000050;
     color: #fff; /* Se corrigió el valor del color */
     text-align: center;
     width: 100%;
@@ -109,7 +106,7 @@ margin: auto, 4px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10;
-   overflow: auto;;
+   overflow: auto;
 }
 
 .footer a {
@@ -168,7 +165,7 @@ margin: auto, 4px;
     color: #fff;
     border-color: #007BFF;
 }
- <hr>
+ 
 
 
 /* Active button style */
