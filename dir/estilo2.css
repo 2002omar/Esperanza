@@ -1,204 +1,214 @@
 body {
-	    background-color: blue;
-		    font-size: 100%;
-			    color: white;
-			}
+      background-color: blue;
+ font-size: 100%;
+ color: white;
+}
 
-			p {
-				    font-size: 1rem;
-					    margin-bottom: 1.25rem;
-					}
+p {
+	font-size: 1rem;
+	margin-bottom: 1.25rem;
+	
+}
 
-					/*
-					 * @media query para tablets y pantallas más grandes
-					 *    Esto se aplica cuando el ancho de la pantalla es de 768px o más.
-					 *    */
+/*
+ * @media query para tablets y pantallas más grandes
+ *    Esto se aplica cuando el ancho de la pantalla es de 768px o más.
+ * */
 	@media (min-width: 768px) {
-		    p {
-				        /* Aumenta un poco el tamaño de la fuente para que sea más cómodo de leer
-						 *            en pantallas más grandes sin que se vea demasiado pequeña. */
-	        font-size: 1.125rem; /* Esto equivale a 18px */
-			    }
-			}
+		    p {
+			        /* Aumenta un poco el tamaño de la fuente para que sea más cómodo de leer
+			           en pantallas más grandes sin que se vea demasiado pequeña. */
+	        font-size: 1.125rem; /* Esto equivale a 18px */
+	    }
+} 
 
-			/* @media query para escritorios y pantallas muy grandes
-			 *    Esto se aplica cuando el ancho de la pantalla es de 1024px o más.
-			 *    */
+/* @media query para escritorios y pantallas muy grandes
+ *    Esto se aplica cuando el ancho de la pantalla es de 1024px o más.
+ * */
 	@media (min-width: 1024px) {
-		    p {
-				        /* Puedes hacer un ajuste final para pantallas grandes si lo consideras necesario. */
-				        font-size: 1.2rem; /* Esto equivale a 19.2px */
-						        
-						        /* Ajusta la altura de la línea si crees que mejora la legibilidad
-								 *            en un tamaño de fuente mayor. */
-	        line-height: 1.6;
-			    }
-			}
+		    p {
+			        /* Puedes hacer un ajuste final para pantallas grandes si lo consideras necesario. */
+			        font-size: 1.2rem; /* Esto equivale a 19.2px */
+			        
+			        /* Ajusta la altura de la línea si crees que mejora la legibilidad
+			           en un tamaño de fuente mayor. */
+	        line-height: 1.6;
+	    }
+}
 
-			/* Estilos para el elemento header */
-			header {
-				    background-color: blue; /* Color de fondo del encabezado */
-					    padding: 10px;
-						    margin: 10px; /* Corregido: eliminado 'align-content:' */
-							    text-align: center; /* Centra el contenido horizontalmente */
-							}
 
-							/* Estilos para la imagen dentro del header */
-							header img {
-								    display: block; /* Elimina el espacio extra debajo de la imagen */
-									    margin: 0;
-										    width: 100%; /* La imagen ocupa todo el ancho del encabezado */
-											    height: auto; /* Mantiene la proporción de la imagen */
-												    object-fit: cover; /* Recorta la imagen para que cubra el área sin distorsionarse */
-												}
 
-												legend {
-													    text-align: center;
-														    overflow: auto;
-														}
+header {
+	background-color: blue; 
+padding: 10px;
+margin: 10px;
+text-align: center;
+}
+ 
+.header img {
+ display: block;
+ margin: 0;
+width: 100%;	
+height: auto;
+       object-fit: cover;
+   }
 
-														.main {
-															    background: blue;
-																    max-width: 100%;
-																	    font-family: monospace;
-																		    margin: 0;
-																			    padding: 0;
-																				    height: auto;
-																					    overflow: auto;
-																					}
+legend {
+       text-align: center;
+     	overflow: auto;
+	}
 
-																					.main h1, .main h2, .main h3, .main h4, .main h5 {
-																						    color: orange;
-																							    text-align: center;
-																							}
+	.main {
+	  background: blue;
+max-width: 100%;
+	 font-family: monospace;
+	margin: 0;
+	padding: 0;
+height: auto;
+overflow: auto;
+}
 
-																							.main em {
-																								    color: pink;
-																									    margin: 0 3px; /* Se corrigió el error de sintaxis aquí */
-																									}
 
-																									.main ul {
-																										    background: blue;
-																											    width: 100%;
-																												    margin: 0 auto;
-																													    padding: 10px;
-																														    list-style-type: none; /* Esta línea elimina las viñetas */
-																														}
+.main h1, h2, h3, h4, h5{
+ b color: orange;
+    b text-align: center;
+}
 
-																														.main p {
-																															    color: #fff;
-																																    padding: 20px;
-																																}
+.main em {
+	color: pink;
+	margin: 0 3px
+}
 
-																																/* Estilos para el pie de página (opcional) */
-																																footer {
-																																	    display: block; /* Corregido: cambiado de 'inline' a 'block' */
-																																		    text-align: center;
-																																			    background-color: #000000;
-																																				    color: #fff; /* Se corrigió el valor del color */
-																																					    width: 100%;
-																																						    margin-top: 60px;
-																																							    margin-left: auto;
-																																								    margin-right: auto;
-																																									    margin-bottom: 10px; /* Corregido: añadido 'px' */
-																																										    overflow: auto;
-																																										}
 
-																																										.footer a {
-																																											    text-decoration: none;
-																																											}
+.main ul {
+background: blue;
+width: 100%;
+ margin: 0 auto;
+ padding: 10px;
+ list-style-type: none;
+ }
 
-																																											.footer a:hover {
-																																												    text-decoration: underline;
-																																												}
+.main p {
+ color: #fff;	padding: 20px;
+ }
 
-																																												/*Efecto marquee */
-																																												.marquee {
-																																													    font-family: monospace;
-																																														    color: orange;  
-																																															    width: 100%; /* El ancho del contenedor */
-																																																    white-space: nowrap; /* Evita que el texto salte de línea */
-																																																	    overflow: hidden; /* Oculta el texto que se sale del contenedor */
-																																																		    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-																																																		}
+				
+ footer {
+display: block;
+text-align: center;background-color: #000000;
+ color: #fff;
+ width: 100%;
+ margin-top: 60px;
+margin-left:auto;
+margin-right: 
+automargin-bottom: 10px;
+overflow: auto;
+}
 
-																																																		.marquee span {
-																																																			    display: inline-block; /* Permite aplicar la animación al texto */
-																																																				    padding-left: 100%; /* Hace que el texto comience fuera del área visible */
-																																																					    animation: marquee 15s linear infinite; /* Aplica la animación */
-																																																					}
+.footer a {
+ text-decoration: none;
+ }
 
-																																																					@keyframes marquee {
-																																																						    0% {
-																																																								        transform: translate(0, 0); /* Posición inicial: 0% de desplazamiento */
-																																																										    }
-																																																											    100% {
-																																																													        transform: translate(-100%, 0); /* Posición final: se desplaza el 100% de su propio ancho hacia la izquierda */
-																																																															    }
-																																																															}
+.footer a:hover {
+ text-decoration: underline;
+ }
 
-																																																															/* Container for the button bar */
-																																																															.button-bar {
-																																																																    list-style-type: none;
-																																																																	    text-decoration: none;
-																																																																		    width: fit-content;
-																																																																			    width: 90%;
-																																																																				    gap: 10px;
-																																																																					    margin: 0;
-																																																																						    padding: 0;
-																																																																							    background-color: blue;
-																																																																								    border-radius: 8px;
-																																																																									    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-																																																																									} /* Corregido: añadido llave de cierre faltante */
+.marquee {
+ font-family: monospace;
+ color: orange;  
+ width: 100%;
+ white-space: nowrap;
+ overflow: hidden
+  box-sizing: border-box;
+  }
 
-																																																																									/* Hover effect - Corregido selector */
-																																																																									.button a:hover {
-																																																																										    background-color: magenta;
-																																																																											    color: #fff;
-																																																																												    border-color: #007BFF;
-																																																																												}
 
-																																																																												/* Active button style */
-																																																																												.button.active {
-																																																																													    background-color: red;
-																																																																														    color: #fff;
-																																																																															    border-color: #0056b3;
-																																																																																    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-																																																																																}
+  .marquee {
+	  font-family: monospace;
+color: orange;  
+ width: 100%; /* El ancho del contenedor */
+     white-space: nowrap; /* Evita que el texto salte de línea */
+	    overflow: hidden; /* Oculta el texto que se sale del contenedor */    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  } 
 
-																																																																																.caja-especial {
-																																																																																	    background-color:   #3b7b75;
-																																																																																		    font-family: sans-serif;
-																																																																																			    box-sizing: border-box;
-																																																																																				    margin: 0;
-																																																																																					    padding: 0;
-																																																																																						    border: 1px solid red;
-																																																																																							    text-align: center;
-																																																																																							}
+  .marquee span {
+	      display: inline-block; /* Permite aplicar la animación al texto */
+	      padding-left: 100%; /* Hace que el texto comience fuera del área visible */
+	    animation: marquee 15s linear infinite; /* Aplica la animación */
+  
 
-																																																																																							/* Corregido selector y sintaxis de animación */
-																																																																																							#latido {
-																																																																																								    color: black;
-																																																																																									    animation-name: latido;
-																																																																																										    animation-duration: 1.5s;
-																																																																																											    animation-iteration-count: infinite;
-																																																																																											}
+@keyframes marquee {
+	      0% {
+		          transform: translate(0, 0); /* Posición inicial: 0% de desplazamiento */
+		      }
+		      100% {
+			          transform: translate(-100%, 0); /* Posición final: se desplaza el 100% de su propio ancho hacia la izquierda */
+			      }
+   }
+   
 
-																																																																																											/* Define la animación del "latido" con el nombre 'latido' */
-																																																																																											@keyframes latido {
-																																																																																												    0% {
-																																																																																														        /* Estado inicial: tamaño normal y color negro */
-																																																																																														        transform: scale(1);
-																																																																																																        color: black;
-																																																																																																		    }
-																																																																																																			    50% {
-																																																																																																					        /* Estado intermedio: aumenta de tamaño un 15% y cambia de color a rojo */
-																																																																																																					        transform: scale(1.15); /* Aumenta un 15% */
-																																																																																																							        color: red;
-																																																																																																									    }
-																																																																																																										    100% {
-																																																																																																												        /* Estado final: vuelve al tamaño normal y color negro */
-																																																																																																												        transform: scale(1);
-																																																																																																														        color: black;
-																																																																																																																    }
-																																																																																																																}
+   /* Container for the button bar */
+   .button-bar { list-style-type: none;
+	   text-decoration: none;
+	   width: fit-content;
+width: 90%;
+ gap: 10px;
+margin: 0;
+ padding: 0;
+ background-color: blue;
+ border-radius: 8px;
+
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   } /* Corregido: añadido llave de cierre faltante */ 
+
+   /* Hover effect - Corregido selector */
+   .button a:hover {
+	       background-color: magenta;
+	       color: #fff;
+	       border-color: #007BFF;
+   } 
+
+   /* Active button style */
+   .button.active {
+	       background-color: red;
+	       color: #fff;
+	       border-color: #0056b3;
+	       box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+   }
+
+
+   .caja-especial {
+	       background-color: #004535;
+	       font-family: sans-serif;
+	       box-sizing: border-box;
+	       margin: 0;
+	       padding: 10px:
+	       border: 1px solid red;
+	       text-align: center;
+   }
+
+   #latido {
+	       color: black;
+	       animation-name: latido;
+	   animation-duration: 3s;
+	       animation-iteration-count: infinite;
+   } 
+
+   /* Define la animación del "latido" con el nombre 'latido' */
+   @keyframes latido {
+	       0% {
+		           /* Estado inicial: tamaño normal y color negro */
+		           transform: scale(1);
+		           color: black;
+		       }
+		       50% {
+			           /* Estado intermedio: aumenta de tamaño un 15% y cambia de color a rojo */
+			           transform: scale(1.15); /* Aumenta un 15% */
+			           color: red;
+			       }
+			       100% {
+				           /* Estado final: vuelve al tamaño normal y color negro */
+				           transform: scale(1);
+				color: white;
+				       }
+			   } 
