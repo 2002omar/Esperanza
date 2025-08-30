@@ -48,6 +48,7 @@ text-align: center;
 .header img {
  display: block;
  margin: 0;
+ padding: 0;
 width: 100%;	
 height: auto;
        object-fit: cover;
@@ -57,6 +58,11 @@ legend {
        text-align: center;
      	overflow: auto;
 	}
+
+.main h1, h2, h3, h4, h5{
+	color: orange;
+	text-align: center;
+}
 
 	.main {
 	  background: blue;
