@@ -1,4 +1,4 @@
- /* Estilos CSS corregidos */
+
 body {
     background-color: blue;
     font-size: 100%;
@@ -9,6 +9,7 @@ body {
 
 
 p {
+	text-indent: 3em;
     font-size: 1rem;
     margin-bottom: 1.25rem;
 } 
@@ -31,7 +32,14 @@ header {
     padding: 10px;
     margin: 10px;
     text-align: center;
-} 
+
+	blockquote {
+		text-align: center;
+border-left: solid 2px #fff;
+paddi 10px;border-left: solid 2px #fff;
+padding: 10px;border-left: solid 2px #fff;
+padding: 10px;
+	}
 
 header img {
     display: block;
@@ -69,6 +77,13 @@ header img {
     color: #fff;
     padding: 20px;
 } 
+
+blockquote{
+	    text-align: center;
+		    border-left: solid 2px #fff;
+			    padding: 10px;
+			}
+
     
 .titulo{
     text-align: center;
