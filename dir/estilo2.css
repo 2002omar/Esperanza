@@ -36,8 +36,7 @@ header {
 	blockquote {
 		text-align: center;
 border-left: solid 2px #fff;
-paddi 10px;border-left: solid 2px #fff;
-padding: 10px;border-left: solid 2px #fff;
+border-right: solid 2px #fff;
 padding: 10px;
 	}
 
@@ -80,7 +79,8 @@ header img {
 
 blockquote{
 	    text-align: center;
-		    border-left: solid 2px #fff;
+		    border-left: solid 2px #fff; 
+		border-right: solid 2px #fff;
 			    padding: 10px;
 			}
 
