@@ -12,7 +12,9 @@ body {
 p {
 	text-indent: 3em;
     font-size: 1rem;
-    margin-bottom: 1.25rem;
+margin-right: auto;
+    margin-bottom: 2em;
+	margin-right: 1em;
 } 
 
 @media (min-width: 768px) {
