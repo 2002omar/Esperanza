@@ -5,7 +5,7 @@ body {
     color: #efefef;
     margin: 0;
     padding: 0;
-	font-familyC Calibri, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 P {
@@ -78,12 +78,24 @@ header img {
     padding: 20px;
 } 
 
-blockquote{
+
+blockquote {
+	    /* Centra el texto del bloque de cita */
 	    text-align: center;
-		    border-left: solid 2px #fff; 
-		border-right: solid 2px #fff;
-			    padding: 10px;
-			}
+
+		    /* Aumenta el grosor de los bordes para una mejor visibilidad y los hace sólidos para consistencia */
+		    border-left: 5px solid #ccc;
+			    border-right: 5px solid #ccc;
+
+				    /* Añade espacio interno para que el texto no toque los bordes */
+				    padding: 10px 20px;
+
+					    /* Añade margen para separarlo del contenido circundante y asegura que el borde no quede pegado a los lados de la página en el modo de visualización móvil */
+					    margin: 20px auto;
+
+						    /* Define el ancho máximo para una mejor legibilidad en pantallas grandes */
+						    max-width: 600px;
+						}
 
     
 .titulo{
