@@ -1,19 +1,17 @@
-
-body {
+ body {
     background-color: blue;
     font-size: 100%;
     color: #efefef;
     margin: 0;
     padding: 0;
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-P {
-	    text-indent: 2.5em;
-		   margin-left: 1em;
-			    margin-bottom: 2em;
-			}
-
+p {
+    text-indent: 2.5em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
 
 @media (min-width: 768px) {
     p {
@@ -32,17 +30,17 @@ header {
     background-color: blue;
     padding: 10px;
     margin: 10px;
-    text-align: center;}
+    text-align: center;
+}
 
 blockquote {
-	    text-align: center;
-		    border-left: 5px solid #ccc;
-			    border-right: 5px solid #ccc;
-				    padding: 10px 20px;
-					    margin: 20px auto;
-						    max-width: 600px;
-						}
-
+    text-align: center;
+    border-left: 5px solid #ccc;
+    border-right: 5px solid #ccc;
+    padding: 10px 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
 
 header img {
     display: block;
@@ -81,8 +79,7 @@ header img {
     padding: 20px;
 }
 
-    
-.titulo{
+.titulo {
     text-align: center;
     color: orange;
     margin: 1px 2px;
@@ -135,11 +132,11 @@ footer a:hover {
 
 .button-bar {
     list-style-type: none;
-    text-decoration: none;
-    width: fit-content;
+    display: flex; /* Añadido para distribuir los elementos en una fila */
+    flex-wrap: wrap; /* Añadido para permitir que los elementos salten de línea en pantallas pequeñas */
     width: 90%;
     gap: 10px;
-    margin: 0;
+    margin: 0 auto; /* Centrado */
     padding: 0;
     background-color: blue;
     border-radius: 8px;
@@ -195,27 +192,27 @@ footer a:hover {
     }
 }
 
- #latido {
-  animation-name: latido;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  background-color: blue; /* El color de fondo del latido */
-  color: white; /* El color del texto del latido */
-  padding: 10px; /* Para que el "latido" sea visible */
-  display: inline-block; /* Importante para que la transformación funcione */
+#latido {
+    animation-name: latido;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    display: inline-block;
 }
 
 @keyframes latido {
-  0% {
-    transform: scale(1);
-    color: white;
-  }
-  50% {
-    transform: scale(1.15);
-    color: red;
-  }
-  100% {
-    transform: scale(1);
-    color: white;
-  }
+    0% {
+        transform: scale(1);
+        color: white;
+    }
+    50% {
+        transform: scale(1.15);
+        color: red;
+    }
+    100% {
+        transform: scale(1);
+        color: white;
+    }
 }
