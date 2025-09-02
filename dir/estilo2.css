@@ -34,12 +34,15 @@ header {
     margin: 10px;
     text-align: center;}
 
-	blockquote {
-		text-align: center;
-border-left: solid 2px #fff;
-border-right: solid 2px #fff;
-padding: 10px;
-	}
+blockquote {
+	    text-align: center;
+		    border-left: 5px solid #ccc;
+			    border-right: 5px solid #ccc;
+				    padding: 10px 20px;
+					    margin: 20px auto;
+						    max-width: 600px;
+						}
+
 
 header img {
     display: block;
@@ -76,26 +79,7 @@ header img {
 .main p {
     color: #fff;
     padding: 20px;
-} 
-
-
-blockquote {
-	    /* Centra el texto del bloque de cita */
-	    text-align: center;
-
-		    /* Aumenta el grosor de los bordes para una mejor visibilidad y los hace sólidos para consistencia */
-		    border-left: 5px solid #ccc;
-			    border-right: 5px solid #ccc;
-
-				    /* Añade espacio interno para que el texto no toque los bordes */
-				    padding: 10px 20px;
-
-					    /* Añade margen para separarlo del contenido circundante y asegura que el borde no quede pegado a los lados de la página en el modo de visualización móvil */
-					    margin: 20px auto;
-
-						    /* Define el ancho máximo para una mejor legibilidad en pantallas grandes */
-						    max-width: 600px;
-						}
+}
 
     
 .titulo{
