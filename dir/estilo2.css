@@ -1,5 +1,5 @@
  body {
-    background-color: blue;
+    background-color: #252525;
     font-size: 100%;
     color: #efefef;
     margin: 0;
@@ -7,24 +7,32 @@
     font-family: Arial, sans-serif;
 }
 
+.inicio {
+    background-color: #353535;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 p {
     text-indent: 2.5em;
     margin-left: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
+    max-width: 900px;
 }
 
 @media (min-width: 768px) {
     p {
         font-size: 1.125rem;
     }
-} 
+}
 
 @media (min-width: 1024px) {
     p {
         font-size: 1.2rem;
         line-height: 1.6;
     }
-} 
+}
 
 header {
     background-color: blue;
@@ -42,6 +50,11 @@ blockquote {
     max-width: 600px;
 }
 
+
+.main blockquote p {
+  color: orange;
+}
+
 header img {
     display: block;
     margin: 0 auto;
@@ -55,72 +68,75 @@ header img {
     background: blue;
     width: 100%;
     font-family: monospace;
-    margin: 0;
+    margin: 0 auto; /* Centra el contenedor principal */
     padding: 0;
     height: auto;
     overflow: auto;
+    max-width: 1000px; /* Ancho máximo para el contenido principal */
 }
 
 .main em {
     color: pink;
     margin: 0 3px;
-} 
+}
 
 .main ul {
-    background: blue;
     width: 100%;
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 10px;
     list-style-type: none;
-} 
-
+}
 .main p {
     color: #fff;
     padding: 20px;
+    max-width: 900px; /* Ancho para los párrafos dentro del main */
+    margin: 0 auto; /* Centra los párrafos */
 }
 
 .titulo {
     text-align: center;
-    color: orange;
+    color: #eee;
     margin: 1px 2px;
+   -webkit-text-stroke: .8px #ff0000;
+
 }
 
 footer {
-    display: block;
-    text-align: center;
-    background-color: #002020;
-    color: #fff;
+    bottom: 0;
     width: 100%;
-    margin-top: 60px;
+    text-align: center;
+    background-color: #121212;
+    color: #eee;
+    padding: 10px 0;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-    overflow: auto;
-} 
+}
 
 footer a {
     text-decoration: none;
-	color: #fff;
-} 
+    color: #fff;
+}
 
 footer a:hover {
     text-decoration: underline;
-} 
+}
 
+/* Inicio de marqee */
 .marquee {
     font-family: monospace;
-    color: orange;  
+    color: orange;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-} 
+}
 
 .marquee span {
     display: inline-block;
     padding-left: 100%;
     animation: marquee 15s linear infinite;
-} 
+}
 
 @keyframes marquee {
     0% {
@@ -129,52 +145,50 @@ footer a:hover {
     100% {
         transform: translate(-100%, 0);
     }
-} 
-
-.button-bar {
-    list-style-type: none;
-    display: flex; /* Añadido para distribuir los elementos en una fila */
-    flex-wrap: wrap; /* Añadido para permitir que los elementos salten de línea en pantallas pequeñas */
-    width: 90%;
-    gap: 10px;
-    margin: 0 auto; /* Centrado */
-    padding: 0;
-    background-color: blue;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} 
-
-.button-bar a {
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
-    background-color: #004535;
-    border-radius: 4px;
 }
 
-.button-bar a:hover {
-    background-color: magenta;
-    color: #fff;
-    border-color: #007BFF;
-} 
+.nav-menu {
+    display: block;
+    padding: 10px 20px; /* Unidad de medida agregada */
+    margin: 0 auto;
+    width: 250px;
+    background-color: #101010;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+}
 
-.button-bar a.active {
-    background-color: red;
-    color: #fff;
-    border-color: #0056b3;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+.nav-menu li {
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-menu li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+}
+
+.nav-menu li a:hover {
+    background-color: green;
+    color: #eee;
 }
 
 .caja-especial {
-    background-color: blue; 
+    background-color: blue;
     font-family: sans-serif;
     box-sizing: border-box;
-    margin: 20px 0;
+    margin: 20px auto; /* Centra la caja */
     padding: 20px;
     border: 1px solid wheat;
     text-align: center;
     border-radius: 20px;
+    max-width: 600px; /* Establece un ancho máximo */
 }
 
 .caja-especial h2 {
@@ -217,3 +231,4 @@ footer a:hover {
         color: white;
     }
 }
+
