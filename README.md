@@ -3,7 +3,7 @@
 Lo que he hecho hasta ahora.
 https://2002omar.github.io/Esperanza/dir/Esperanza.html
 
-## Parte primera.
+## Glosario.
 
 ### Quien soy.
 
@@ -19,7 +19,9 @@ Este proyecto es muy importante para mí, ya que me ha permitido aprender a subi
 
 ### El proceso para realizarlo
 
- Enncontré en Github una oportunidad de contar con un dominio gratis para subir mis proyectos. Aunque yo tenía una cuenta desde hace muchos años. Nunca la había usado.
+ Enncontré en Github una oportunidad de contar con un dominio gratis para subir mis proyectos.
+ 
+   Aunque yo tenía una cuenta desde hace muchos años. Nunca la había usado.
  Ahora estoy agradecido con Dios y con los integrantes de Github por esta maravilla.
  
 ### ¿Que herramientas usé para crear un entorno de trabajo ideal.
@@ -39,7 +41,12 @@ Puedes averguarlo con:
 NODE -v
 Si no lo esta, usa el siguiente comando para instalarlo:
  **pkg install  node.js**
-Te comento que el gestor de paquetes npm se instala con NODE 
+Te comento que el gestor de paquetes npm se instala con NODE
+
+*  La hoja de estilo *Normalize*
+
+Esta hoja de estilo, hace un buen trabajo para rectificar la semántica del HTML, y el que tu página se vea igual en todos los navegadores.
+Si necesitas algo más complejo debido a la naturaleza de tu trabajo; puedes optar por otras opciones como Bootsteap.
 
 * Editor VIM para Termux.
 
@@ -56,7 +63,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-Necesitas crear en Termux: ~/.vim o ~/home, si te pasa lo que a mi que no lo pude instalar en la primera ruta; Un archivo .vimrc donde guardaras toda la configuracion dw Vim. Alli pondras una serie de configuraciones siendo la primera: 
+Necesitas crear en Termux: *~/.vim o ~/home, si te pasa lo que a mi que no lo pude instalar en la primera ruta; Un archivo .vimrc donde guardaras toda la configuracion dw Vim. Alli pondras una serie de configuraciones siendo la primera: 
 *Filetype plugin on*
 Que permite descargar plugins.
 Las otras dos son:
