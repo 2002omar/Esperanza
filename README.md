@@ -1,6 +1,6 @@
-# Esperanza.
+# EsperanzaLo que h
 
-Lo que he hecho hasta ahora.
+e hecho hasta ahora.
 https://2002omar.github.io/Esperanza/dir/Esperanza.html
 
 ## Glosario.
@@ -19,12 +19,14 @@ Este proyecto es muy importante para mí, ya que me ha permitido aprender a subi
 
 ### El proceso para realizarlo
 
+
  Enncontré en Github una oportunidad de contar con un dominio gratis para subir mis proyectos.
  
    Aunque yo tenía una cuenta desde hace muchos años. Nunca la había usado.
  Ahora estoy agradecido con Dios y con los integrantes de Github por esta maravilla.
  
 ### ¿Que herramientas usé para crear un entorno de trabajo ideal.
+
 
 *  Termux para Android.
 
@@ -63,14 +65,14 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-Necesitas crear en Termux: *~/.vim o ~/home, si te pasa lo que a mi que no lo pude instalar en la primera ruta; Un archivo .vimrc donde guardaras toda la configuracion dw Vim. Alli pondras una serie de configuraciones siendo la primera: 
+Necesitas crear en Termux: "~/.vim" o "~/home", si te pasa lo que a mi que no lo pude instalar en la primera ruta; Un archivo .vimrc donde guardaras toda la configuracion dw Vim. Alli pondras una serie de configuraciones siendo la primera: 
 *Filetype plugin on*
 Que permite descargar plugins.
 Las otras dos son:
-  *call plug#begin('~/.vim/plugged')*
+  call plug#begin('~/.vim/plugged')
 Que se coloca primero, y
 Que dejando varias lineas de intermedio colocas:
-*call plug#end()*
+call plug#end()
 En medio de estas 2 configuraciones vas a colocar todos los plugins que quieras.
 Los plugins se instalan con el comando 
 *:PlugInstal*
@@ -94,18 +96,18 @@ Esto me hizo volver a los manuales de programación web, y la ayuda que ofrece l
 Ahora te muestro los 3 errores que cometí y espero que tu no lo cometas.
 
 
-1. **Publiqué mi trabajo antes de estar listo**
+1. ***Publiqué mi trabajo antes de estar listo***
 
 Esto no se debe hacer; porque hubo momentos en que dañé la página y eso es lo que mostraba a quien pudiera abrirla. Y cosas como eso; lo muestran a uno como poco serio e irresponsable.
 
-2. **Editar código aquí, allá y acuyá**
+2. ***Editar código aquí, allá y acuyá***
 
 El trabajo tiene que hacerse ordenadamente.
 Si editas tu página web, empieza por el esqueleto del html, el head, el titulo y lo s links a tu hoja de estilos y otras paginas que compongan tu proyecto.
 Eso sin olvidar los metadatos como el *charset y el wieport*.
 Luego el *body* al que vas agregando en el css el color de background y así, trabajando a la par html y css hasta que quedes sastifecho con tu trabajo.
 
-1. **Copiar y pegar código**
+1. ***Copiar y pegar código***
 
 De todos los errores; este es el más infame y el que menos aprovecha para el aprendizaje.
 No te culpes si lo haces, porque yo mismo lo he hecho. 
