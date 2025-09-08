@@ -67,12 +67,12 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 Necesitas crear en Termux un archivo ***.vimrc*** en el directorio: \~\/.vim\/ o \~\/home\/; si te pasa lo que a mi que no lo pude instalar en la primera ruta.
-Este archivo, si te decides usar a Vim como editor; e$ donde guardarás toda la configuracion dw Vim. Alli pondras una serie de configuraciones que serán las que configure y de apariencia al editor.
+Este archivo, si te decides usar a Vim como editor; es donde guardarás toda la configuracion dw Vim. Alli pondras una serie de configuraciones que serán las que determinen y de apariencia al editor.
  Siendo la primera: 
 *Filetype plugin on*
 Que permite descargar plugins.
 Las otras dos son:
-  ***call plug#begin('~/.vim/plugged')***
+  ***call plug#begin\('\~\/.vim\/plugged')***
 Que se coloca primero, y
 Que dejando varias lineas de intermedio colocas:
 ***call plug#end()***
