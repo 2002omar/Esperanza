@@ -23,7 +23,7 @@ Este proyecto es muy importante para mí, ya que me ha permitido aprender a subi
 #### El proceso para realizarlo
 
 
- Enncontré en Github una oportunidad de contar con un dominio gratis para subir mis proyectos.
+ Encontré en Github una oportunidad de contar con un dominio gratis para subir mis proyectos.
  
    Aunque yo tenía una cuenta desde hace muchos años. Nunca la había usado.
  Ahora estoy agradecido con Dios y con los integrantes de Github por esta maravilla.
@@ -130,7 +130,6 @@ Puedes enviarme un email a itaigad2002@gmail.com
 Att.
 
 ***Omar Santiago***  
-
 
 
 
