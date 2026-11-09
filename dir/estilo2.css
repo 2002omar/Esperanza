@@ -1,4 +1,4 @@
- body {
+body {
     background-color: #252525;
     font-size: 100%;
     color: #efefef;
@@ -15,6 +15,7 @@
 }
 
 p {
+    font-size: 16px; /* Tamaño base corregido a 16px para móviles */
     text-indent: 2.5em;
     margin-left: 1em;
     margin-bottom: 1.5em;
@@ -50,7 +51,6 @@ blockquote {
     max-width: 600px;
 }
 
-
 .main blockquote p {
   color: orange;
 }
@@ -68,11 +68,11 @@ header img {
     background: #000090;
     width: 100%;
     font-family: monospace;
-    margin: 0 auto; /* Centra el contenedor principal */
+    margin: 0 auto;
     padding: 0;
     height: auto;
     overflow: auto;
-    max-width: 1000px; /* Ancho máximo para el contenido principal */
+    max-width: 1000px;
 }
 
 .main em {
@@ -86,11 +86,12 @@ header img {
     padding: 10px;
     list-style-type: none;
 }
+
 .main p {
     color: #fff;
     padding: 20px;
-    max-width: 900px; /* Ancho para los párrafos dentro del main */
-    margin: 0 auto; /* Centra los párrafos */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .titulo {
@@ -98,7 +99,6 @@ header img {
     color: #eee;
     margin: 1px 2px;
    -webkit-text-stroke: .8px #ff0000;
-
 }
 
 footer {
@@ -122,7 +122,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Inicio de marqee */
+/* Inicio de marquee */
 .marquee {
     font-family: monospace;
     color: orange;
@@ -149,7 +149,7 @@ footer a:hover {
 
 .nav-menu {
     display: block;
-    padding: 10px 20px; /* Unidad de medida agregada */
+    padding: 10px 20px;
     margin: 0 auto;
     width: 250px;
     background-color: #101010;
@@ -183,12 +183,12 @@ footer a:hover {
     background-color: blue;
     font-family: sans-serif;
     box-sizing: border-box;
-    margin: 20px auto; /* Centra la caja */
+    margin: 20px auto;
     padding: 20px;
     border: 1px solid wheat;
     text-align: center;
     border-radius: 20px;
-    max-width: 600px; /* Establece un ancho máximo */
+    max-width: 600px;
 }
 
 .caja-especial h2 {
