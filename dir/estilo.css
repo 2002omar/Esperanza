@@ -1,13 +1,13 @@
-html {
+Html {                
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-body {  
+body {
   margin: 0;
   padding: 0;
-  }
-
+  font-size: 16px; /* Tamaño base general para el cuerpo */
+}
 
 main {
   display: block;
@@ -179,4 +179,14 @@ template {
 [hidden] {
   display: none;
 }
- 
+
+/* === REGLAS AGREGADAS PARA CORREGIR EL TAMAÑO EN MÓVILES === */
+p {
+  font-size: 16px !important;
+  line-height: 1.5;
+}
+
+address {
+  font-size: 16px !important;
+}
+
