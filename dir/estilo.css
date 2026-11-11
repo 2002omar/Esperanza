@@ -1,32 +1,54 @@
-Html {                
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+/* ============================================
+   estilo.css  —  Base + Normalize + Ajustes
+   ============================================ */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  /* Base de 16px para que 1rem = 16px, pero permitimos que el navegador escale */
+  font-size: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px; /* Tamaño base general para el cuerpo */
+  /* Sin font-size fijo: hereda del html y respeta la config del usuario */
+  font-size: 1rem; /* 16px base, pero escalable */
+  line-height: 1.5;
 }
 
 main {
   display: block;
 }
 
+/* ---- Encabezados con tamaños claros y escalables ---- */
 h1 {
-  font-size: 2em;
-  margin: 0.67em ;
+  font-size: 2.25rem;   /* ~36px */
+  margin: 0.67em 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75rem;   /* ~28px */
+  margin: 0.75em 0;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.375rem;  /* ~22px */
+  margin: 0.83em 0;
+  line-height: 1.3;
 }
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 a {
@@ -34,9 +56,9 @@ a {
 }
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -47,8 +69,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 small {
@@ -63,16 +85,13 @@ sup {
   vertical-align: baseline;
 }
 
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
 
 img {
   border-style: none;
+  max-width: 100%;   /* evita que se salga de la pantalla en móvil */
+  height: auto;
 }
 
 button,
@@ -80,21 +99,17 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
 
 button,
-input { /* 1 */
-  overflow: visible;
-}
+input { overflow: visible; }
 
 button,
-select { /* 1 */
-  text-transform: none;
-}
+select { text-transform: none; }
 
 button,
 [type="button"],
@@ -123,26 +138,22 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
 }
 
-progress {
-  vertical-align: baseline;
-}
+progress { vertical-align: baseline; }
 
-textarea {
-  overflow: auto;
-}
+textarea { overflow: auto; }
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  padding: 0;
 }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -151,8 +162,8 @@ textarea {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -160,33 +171,28 @@ textarea {
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  font: inherit;
 }
 
-details {
-  display: block;
-}
+details { display: block; }
+summary { display: list-item; }
+template { display: none; }
+[hidden] { display: none; }
 
-summary {
-  display: list-item;
-}
+/* ============================================
+   AJUSTES DE LEGIBILIDAD (sin !important)
+   ============================================ */
 
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-/* === REGLAS AGREGADAS PARA CORREGIR EL TAMAÑO EN MÓVILES === */
 p {
-  font-size: 16px !important;
-  line-height: 1.5;
+  /* 1.125rem = 18px si el navegador está por defecto.
+     Si el usuario sube el tamaño en su móvil, esto escala. */
+  font-size: 1.125rem;
+  line-height: 1.6;
 }
 
 address {
-  font-size: 16px !important;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-style: normal; /* opcional: quita la cursiva por defecto */
 }
-
