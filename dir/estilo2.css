@@ -248,28 +248,33 @@ footer a:hover {
   margin: 10px 0;
 }
 
-/* ---------- LATIDO (SIN CAMBIOS) ---------- */
+/* ---------- LATIDO (SIN CAMBIOS) ---------- 
+/* ---------- LATIDO (efecto mejorado) ---------- */
 #latido {
-  animation-name: latido;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: latido 3s ease-in-out infinite;
   background-color: #2b6cb0;
-  color: white;
-  padding: 12px 20px;
+  padding: 15px 25px;
   display: inline-block;
   border-radius: 8px;
   margin: 15px 0;
 }
 
 #latido p {
-  font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+  font-size: clamp(1.75rem, 1.5rem + 1.5vw, 3rem);
   font-weight: bold;
   margin: 0;
   color: white;
+  animation: latido-color 3s ease-in-out infinite;
 }
 
 @keyframes latido {
-  0%   { transform: scale(1);    color: white; }
-  50%  { transform: scale(1.08); color: #ff6b6b; }
-  100% { transform: scale(1);    color: white; }
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+@keyframes latido-color {
+  0%   { color: white; }
+  50%  { color: #ff0000; }
+  100% { color: white; }
 }
